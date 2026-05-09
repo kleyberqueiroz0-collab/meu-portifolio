@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Claudio Francisco</title>
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <!-- Link para o CSS Externo -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-left">
+      <div class="header-badge">Disponível para Projetos</div>
+      <img src="20260509_022018.jpg" class="foto-perfil" alt="Claudio Francisco">
+      <h1>Claudio<span>Francisco</span></h1>
+      <p class="header-sub">
+        <strong>Técnico de Informática</strong> &nbsp;/&nbsp;
+        <strong>Design Gráfico</strong> &nbsp;/&nbsp;
+        <strong>Suporte Técnico</strong>
+      </p>
+    </div>
+    <div class="header-right">
+      <div class="stat-block">
+        <div class="num">3+</div>
+        <div class="label">Empresas</div>
+      </div>
+      <div class="divider-h"></div>
+      <div class="stat-block">
+        <div class="num">5</div>
+        <div class="label">Habilidades</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- SOBRE MIM -->
+    <section class="section">
+      <div class="section-num">01</div>
+      <h2>Sobre Mim</h2>
+      <p>Profissional com experiência em suporte técnico, design gráfico, redes sociais, montagem de equipamentos e organização de eventos.</p>
+    </section>
+
+    <!-- FORMAÇÃO -->
+    <section class="section">
+      <div class="section-num">02</div>
+      <h2>Formação</h2>
+      <div class="tag-list">
+        <span class="tag">Inglês - Completo</span>
+        <span class="tag">Design Gráfico</span>
+        <span class="tag">Programação</span>
+      </div>
+    </section>
+
+    <!-- EXPERIÊNCIA -->
+    <section class="section">
+      <div class="section-num">03</div>
+      <h2>Experiência</h2>
+      <div class="exp-item">
+        <span class="exp-company">1 para 1</span>
+        <span class="exp-role">Eventos, marketing e suporte</span>
+      </div>
+      <div class="exp-item">
+        <span class="exp-company">Confeitado</span>
+        <span class="exp-role">Redes sociais e manutenção</span>
+      </div>
+      <div class="exp-item">
+        <span class="exp-company">We Do It For You</span>
+        <span class="exp-role">Produção e montagem</span>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="section" id="skills-section">
+      <div class="section-num">04</div>
+      <h2>Habilidades</h2>
+      <div class="skill-item">
+        <div class="skill-header">
+          <span class="skill-name">Suporte Técnico</span>
+          <span class="skill-pct">90%</span>
+        </div>
+        <div class="skill-track"><div class="skill-fill" data-pct="90"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-header">
+          <span class="skill-name">Design Gráfico</span>
+          <span class="skill-pct">80%</span>
+        </div>
+        <div class="skill-track"><div class="skill-fill" data-pct="80"></div></div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section contact">
+      <div class="contact-text">
+        <div class="section-num">05</div>
+        <h2>Vamos <span>trabalhar</span> juntos?</h2>
+      </div>
+      <button class="btn-contact" onclick="contacto()">
+        <span>Entrar em Contacto</span>
+      </button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Claudio Francisco</p>
+    <div class="footer-dot"></div>
+    <p>Portfolio v1.0</p>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal-box">
+      <div class="modal-icon">CF</div>
+      <h3>Mensagem Enviada!</h3>
+      <p>Entrarei em contacto brevemente.</p>
+      <button class="btn-close" onclick="fecharModal()">Fechar</button>
+    </div>
+  </div>
+
+  <!-- Link para o JavaScript Externo -->
+  <script src="index.js"></script>
+</body>
+</html>
