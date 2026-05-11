@@ -38,4 +38,17 @@ const observer = new IntersectionObserver(function(entries) {
 const skillsSection = document.getElementById('skills-section');
 if (skillsSection) {
     observer.observe(skillsSection);
-}
+}const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+
+themeToggle.addEventListener('click', () => {
+    // Alterna a classe .light-mode no <body>
+    body.classList.toggle('light-mode');
+    
+    // Opcional: Mudar o texto do botão
+    if (body.classList.contains('light-mode')) {
+        themeToggle.textContent = "Modo Escuro";
+    } else {
+        themeToggle.textContent = "Modo Claro";
+    }
+});

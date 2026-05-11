@@ -10,6 +10,33 @@
   --text: #f0ede8;
   --muted: #6b6b6b;
   --muted2: #3a3a3a;
+}/* Cores padrão (Tema Escuro) */
+:root {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --accent-color: #00ff88;
+}
+
+/* Cores quando o modo claro estiver ativo */
+.light-mode {
+    --bg-color: #f4f4f4;
+    --text-color: #1a1a1a;
+    --accent-color: #0077ff;
+}
+
+/* Aplique as variáveis nos seus elementos */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: 0.3s; /* Para a troca não ser brusca */
+}
+
+button#theme-toggle {
+    padding: 10px;
+    cursor: pointer;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 5px;
 }
 
 html { scroll-behavior: smooth; }
